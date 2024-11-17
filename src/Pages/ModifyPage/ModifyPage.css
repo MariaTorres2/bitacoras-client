@@ -1,0 +1,42 @@
+#cuerpo{
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+}
+
+#mitad1{
+    
+    width: 700px;
+    height: 720px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.circulito{
+    color: black;
+}
+
+#demo-simple-select{
+    width: 440px;
+}
+
+#fut{
+    width: 100%;
+}
+
+#reg{
+    width:120px;
+    height: 40px;
+    font-size: medium;
+    color: black;
+    border: 1px solid black;
+}
+
+#cuerpo2{
+    flex-grow: 1;
+    height: 100vh;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+}

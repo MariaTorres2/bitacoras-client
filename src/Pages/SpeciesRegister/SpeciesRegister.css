@@ -1,0 +1,13 @@
+#botones{
+    border:none;
+}
+#jead{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.ButtonsRegister{
+    background: none;
+    border: 1px solid black;
+    margin-left: 30px;
+}

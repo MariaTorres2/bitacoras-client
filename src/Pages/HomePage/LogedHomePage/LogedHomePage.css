@@ -1,0 +1,35 @@
+#container {
+    display: flex;
+    width: 100vw;
+    height: 100vh; /* Para ocupar toda la altura de la pantalla */
+}
+
+#NavBar {
+    width: 250px; /* Ancho fijo para la barra de navegación */
+    height: 100%;
+    position: sticky;
+    top: 0;
+}
+
+#logom {
+    flex: 1; /* Para ocupar el espacio restante */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    overflow-y: auto; /* Permite desplazamiento vertical en caso de contenido largo */
+}
+
+.card-grid {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Espacio entre las tarjetas */
+    justify-content: center;
+}
+
+.card-container {
+    flex: 1 1 calc(33.333% - 20px); /* Cada tarjeta ocupa un tercio del ancho */
+    box-sizing: border-box;
+    max-width: calc(33.333% - 20px);
+}

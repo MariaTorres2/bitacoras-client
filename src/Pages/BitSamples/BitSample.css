@@ -1,0 +1,34 @@
+#Title{
+    border-bottom: 3px solid black;
+    width: 100%;
+}
+
+#logom{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+#complete {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Dos columnas */
+    grid-template-rows: 1fr 1fr; /* Dos filas */
+    gap: 20px; /* Espacio entre cada celda */
+}
+
+.sample-addinfo {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Espacio entre el título y el input dentro de cada celda */
+}
+
+.input_BitSample {
+    margin-left: 55px;
+    width: 80%; /* Ajusta el ancho al contenedor */
+    height: 50px;
+}
+
+h3{
+    margin-left: 55px;
+}

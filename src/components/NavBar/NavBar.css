@@ -1,0 +1,25 @@
+#Header{
+    height:8rem;
+    width: 100%;
+
+    background-color: #77C05D;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo{
+    height: 8rem;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    -webkit-text-stroke: 1px black;
+    font-size: 24pt;
+}
+
+h1{
+    -webkit-text-stroke: 1px black;
+}
