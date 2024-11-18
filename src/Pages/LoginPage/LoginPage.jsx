@@ -16,7 +16,7 @@ const LoginPage = () => {
   };
 
   const handleLogin = async (e) => {
-    e.preventDefault(); // Previene el comportamiento por defecto del formulario
+    e.preventDefault(); 
 
     try {
       const response = await login(credentials.email, credentials.password);
@@ -33,7 +33,7 @@ const LoginPage = () => {
           icon: 'success',
           confirmButtonText: 'Continuar',
         }).then(() => {
-          navigate('/dashboard'); // Redirige a la página principal
+          navigate('/LogedHomePage');
         });
       } else {
         // Si no hay token, muestra un error genérico
@@ -46,7 +46,6 @@ const LoginPage = () => {
       }
     } catch (error) {
       console.error('Error al iniciar sesión:', error);
-      // Muestra el error en caso de excepción
       Swal.fire({
         title: 'Error al iniciar sesión',
         text: error.message,
