@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 import './HomePage.css';
 
 const HomePage = () => {
-  const imagenes = Array(6).fill(imagenes); // Crea un array con las imágenes para simplificar
+  const imagenes = Array(6).fill(imagenes); 
 
 
     <main>
@@ -25,7 +25,6 @@ const HomePage = () => {
         </div>
       </div>
 
-      {/* Sección de botones de íconos */}
       <div>
         {/* Galería de imágenes */}
         <div id="samples" className="si">
