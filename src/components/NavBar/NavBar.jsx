@@ -10,10 +10,6 @@ return (
         <Grid2 container spacing={8}/>
             <img src="https://i.ibb.co/RPCnpvL/logopage.png" id="logo" alt="" />
             <h1>Bótanica Viva</h1>
-            <a href="Pweb_React\src\Pages\HomePage\LogedHomePage\LogedHomePage.jsx">¿Quienes Somos?</a>
-            <a href="">Servicios</a>
-            <a href="">Explorar</a>
-        <Avatar sx={{ bgcolor: deepOrange[500] }} variant='square'>N</Avatar>
     </div>
     )
 }

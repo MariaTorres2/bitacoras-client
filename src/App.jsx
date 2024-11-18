@@ -18,7 +18,7 @@ const MainApp = () => {
   const location = useLocation();
 
   // Determina si se debe mostrar el Header según la ruta actual
-  const showHeader = location.pathname !== '/LoginPage';
+  const showHeader = location.pathname === '/';
 
   return (
     <div id="main-container">
