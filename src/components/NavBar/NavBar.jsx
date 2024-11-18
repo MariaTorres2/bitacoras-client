@@ -7,7 +7,7 @@ import "./NavBar.css"
 const NavBar = () => {
 return (
     <div id="Header">
-        <Grid2 container spacing={8}/>
+        <Grid2 container spacing={1}/>
             <img src="https://i.ibb.co/RPCnpvL/logopage.png" id="logo" alt="" />
             <h1>Bótanica Viva</h1>
     </div>
