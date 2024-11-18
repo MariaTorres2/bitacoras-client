@@ -62,7 +62,7 @@ function RegisterPage() {
         <div className="app-container">
             {/* Navbar */}
             <div className="navbar">
-                <img src="src/assets/logo.png" alt="Logo" className="logo" />
+                <img src="https://i.ibb.co/RPCnpvL/logopage.png" alt="Logo" className="logo" />
                 <h1>Botánica Viva</h1>
                 <Link to={'/LoginPage'}>
                     <button className="login-button">Login</button>

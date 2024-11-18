@@ -61,12 +61,8 @@ const LoginPage = () => {
         <div id="main" className="animate__animated animate__fadeInDown">
           <div id="nigga_cont" className="animate__animated animate__fadeInLeft">
             <div id="nigga1">
-              <h2 id="wel" className="animate__animated animate__fadeIn">¡WELCUM BACK!</h2>
-              <p className="animate__animated animate__fadeIn">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum deserunt deleniti vitae porro a possimus
-                voluptatibus dicta quae ducimus commodi provident sint, eius minus, explicabo reprehenderit officia
-                modi repellat. Nesciunt.
-              </p>
+              <h2 id="wel" className="animate__animated animate__fadeIn">Login</h2>
+              
             </div>
             <div id="nigga2"></div>
           </div>
