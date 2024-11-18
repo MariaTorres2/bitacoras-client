@@ -22,7 +22,7 @@ const MainApp = () => {
 
   return (
     <div id="main-container">
-      {showHeader && <Header/>}
+      {showHeader && <Header />}
       <Routes>
         {/* Rutas principales */}
         <Route path="/" element={<HomePage />} />
