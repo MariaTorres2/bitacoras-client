@@ -4,9 +4,10 @@
     background-color: #77C05D;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     align-items: center;
 }
+
+
 
 #logo{
     height: 8rem;
