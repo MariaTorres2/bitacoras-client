@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 import './HomePage.css';
 
 // Importa las imágenes de forma explícita
-import sampleImage from '../../assets/';
+import sampleImage from '../../assets/Banner.png';
 
 const HomePage = () => {
   const sampleImages = Array(6).fill(sampleImage); // Crea un array con las imágenes para simplificar
