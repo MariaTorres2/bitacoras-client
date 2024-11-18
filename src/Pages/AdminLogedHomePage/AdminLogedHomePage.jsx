@@ -2,28 +2,34 @@ import React, { useState } from 'react';
 import Cardpp from '../../components/Card/Cardpp';
 import AdminLogNavBar from '../../components/AdminLogNavBar/AdminLogNavBar';
 
-const AdminLogedHomePage = () => {
-    // Estado para almacenar todas las tarjetas (aquí simulamos 30 tarjetas)
-    const [cards] = useState(new Array(30).fill({ title: "Card" }));
-    // Estado para controlar cuántas tarjetas mostrar
-    const [visibleCards, setVisibleCards] = useState(9); // Comienza mostrando 9 tarjetas
+import "./AdminLogedHomePage.css";
 
-    // Función para cargar más tarjetas
+const AdminLogedHomePage = () => {
+    const [cards] = useState(new Array(30).fill({ title: "Card" }));
+    const [visibleCards, setVisibleCards] = useState(9);
+
     const loadMoreCards = () => {
-        setVisibleCards((prevVisible) => prevVisible + 9); // Agrega 9 más al estado de visibilidad
+        setVisibleCards((prevVisible) => prevVisible + 9);
     };
 
     return (
-        <div id="logom">
+        <div id="container">
+            {/* Navigation Bar */}
             <div id="NavBar">
-                <AdminLogNavBar id='cd' />
+                <AdminLogNavBar />
             </div>
-            <div className="card-grid">
-                {cards.slice(0, visibleCards).map((card, index) => (
-                    <div key={index} className="card-container">
-                        <Cardpp title={`${card.title} ${index}`} />
-                    </div>
-                ))}
+
+            <div id="main-content">
+                <div className="card-grid">
+                    {cards.slice(0, visibleCards).map((card, index) => (
+                        <div key={index} className="card-container">
+                            <Cardpp title={`${card.title} ${index}`} />
+                        </div>
+                    ))}
+                </div>
+
+                {/* Load More Button */}
+                
             </div>
         </div>
     );
