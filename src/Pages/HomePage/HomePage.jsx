@@ -1,4 +1,4 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
 import { faLocationDot, faClock, faImage, faMicrophone, faUsers } from '@fortawesome/free-solid-svg-icons';
 import { Button } from '@mui/material';
 import { Link } from 'react-router-dom';
@@ -29,21 +29,7 @@ const HomePage = () => {
 
       {/* Sección de botones de íconos */}
       <div>
-        <div id="botones" className="si">
-          {[
-            { icon: faLocationDot, label: 'Ubicación' },
-            { icon: faClock, label: 'Horarios' },
-            { icon: faImage, label: 'Plantas' },
-            { icon: faMicrophone, label: 'Conferencias' },
-            { icon: faUsers, label: 'Aliados' },
-          ].map(({ icon, label }, index) => (
-            <Button key={index} className="icon-button">
-              <FontAwesomeIcon icon={icon} className="fa-5x" />
-              <br />
-              {label}
-            </Button>
-          ))}
-        </div>
+       
 
         {/* Galería de imágenes */}
         <div id="samples" className="si">

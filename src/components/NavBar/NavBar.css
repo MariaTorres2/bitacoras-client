@@ -5,10 +5,12 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    overflow:hidden;
 }
 
 #cont{
     flex: 1;
+    
 }
 
 #logo{
