@@ -10,7 +10,7 @@
     overflow: hidden; /* Oculta contenido que se desborde */
 }
 
-#cont {
+#contento {
     flex: 1; /* Ocupa todo el espacio disponible */
     display: flex;
     height: 100%; /* Asegúrate de que ocupe toda la altura de Header */

@@ -7,7 +7,7 @@ import "./NavBar.css"
 const NavBar = () => {
 return (
     <div id="Header">
-        <div id="cont">
+        <div id="contento">
             <img src="https://i.ibb.co/RPCnpvL/logopage.png" id="logo" alt="" />
             <h1>Bótanica Viva</h1>
         </div>
