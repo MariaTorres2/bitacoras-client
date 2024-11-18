@@ -79,7 +79,10 @@ input, select {
     padding: 10px;
     border: 2px solid #ccc;
     border-radius: 10px;
+    color: black;
+    background-color: white;
 }
+
 
 .image-section {
     flex-grow: 1;
