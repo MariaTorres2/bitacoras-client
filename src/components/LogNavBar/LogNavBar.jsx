@@ -6,7 +6,7 @@ import '../LogNavBar/LogNavBar.css'
 const LogNavBar = () => {
     return (
         <aside>
-            <img src="src/assets/Logo.png" id="logo" alt="" />
+            <img src="https://i.ibb.co/RPCnpvL/logopage.png" id="logo" alt="" />
             <h2>Botánica Viva</h2>
 
             <Link to={'/AddBit'}>
