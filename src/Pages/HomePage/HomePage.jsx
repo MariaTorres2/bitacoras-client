@@ -29,8 +29,6 @@ const HomePage = () => {
 
       {/* Sección de botones de íconos */}
       <div>
-       
-
         {/* Galería de imágenes */}
         <div id="samples" className="si">
           {sampleImages.map((img, index) => (
