@@ -1,24 +1,29 @@
-#Header{
-    height:8rem;
-    width: 100%;
+#Header {
+    height: 8rem; /* Altura fija */
+    width: 100%; /* Ocupa el ancho completo */
     background-color: #77C05D;
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    overflow:hidden;
+    flex-direction: row; /* Coloca los elementos de manera horizontal */
+    align-items: center; /* Centra verticalmente el contenido */
+    justify-content: space-between; /* Asegura que los elementos dentro se distribuyan correctamente */
+    padding: 0 1rem; /* Agrega un poco de espacio a los lados */
+    overflow: hidden; /* Oculta contenido que se desborde */
 }
 
-#cont{
-    flex: 1;
+#cont {
+    flex: 1; /* Ocupa todo el espacio disponible */
     display: flex;
-    flex-direction: row;
+    height: 100%; /* Asegúrate de que ocupe toda la altura de Header */
+    flex-direction: row; /* Coloca elementos de manera horizontal */
+    align-items: center; /* Centra los elementos dentro de #cont */
+    gap: 1rem; /* Espaciado entre los elementos */
 }
 
-#logo{
-    height: 8rem;
+#logo {
+    height: 100%; /* Ocupa toda la altura del contenedor */
 }
 
-a{
+a {
     text-decoration: none;
     color: white;
     font-weight: bold;
@@ -26,6 +31,7 @@ a{
     font-size: 24pt;
 }
 
-h1{
+h1 {
     -webkit-text-stroke: 1px black;
+    margin: 0; /* Elimina márgenes para evitar desbordes */
 }

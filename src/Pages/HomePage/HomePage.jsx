@@ -9,7 +9,21 @@ import './HomePage.css';
 const HomePage = () => {
   const imagenes = Array(6).fill(imagenes); // Crea un array con las imágenes para simplificar
 
- 
+  const imagenesAzar = () => {
+    const [imagenes, setimagenesAzar] = useState([
+      "https://via.placeholder.com/150", // Imagen inicial
+      "https://via.placeholder.com/150",
+      "https://via.placeholder.com/150",
+    ]);
+  
+    // Función para actualizar una imagen específica
+    const imagen = (index, Url) => {
+      setimagenesAzar((prevImg) =>
+        prevImg.map((img, i) => (i === index ? Url : img))
+      );
+    };
+  
+   
 
 
     <main>
@@ -38,5 +52,5 @@ const HomePage = () => {
       </div>
     </main>
 };
-
-export default HomePage;
+}
+export default HomePage
