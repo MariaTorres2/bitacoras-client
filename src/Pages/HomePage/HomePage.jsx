@@ -2,16 +2,16 @@
 import { faLocationDot, faClock, faImage, faMicrophone, faUsers } from '@fortawesome/free-solid-svg-icons';
 import { Button } from '@mui/material';
 import { Link } from 'react-router-dom';
+import React, { useState } from "react";
 
 import './HomePage.css';
 
-// Importa las imágenes de forma explícita
-import sampleImage from '../../assets/imagen.jpg';
-
 const HomePage = () => {
-  const sampleImages = Array(6).fill(sampleImage); // Crea un array con las imágenes para simplificar
+  const imagenes = Array(6).fill(imagenes); // Crea un array con las imágenes para simplificar
 
-  return (
+ 
+
+
     <main>
       {/* Banner principal */}
       <div id="banner">
@@ -37,7 +37,6 @@ const HomePage = () => {
         </div>
       </div>
     </main>
-  );
 };
 
 export default HomePage;
