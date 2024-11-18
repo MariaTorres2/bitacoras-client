@@ -26,13 +26,7 @@ const HomePage = () => {
       </div>
 
       <div>
-        {/* Galería de imágenes */}
-        <div id="samples" className="si">
-          {sampleImages.map((img, index) => (
-            <img src={img} alt={`Muestra ${index + 1}`} className="fotos" key={index} />
-          ))}
-          
-        </div>
+     
       </div>
     </main>
   
