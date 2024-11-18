@@ -29,7 +29,7 @@ const HomePage = () => {
 
       {/* Sección de botones de íconos */}
       <div>
-        <div id="botones" className="si">
+        {/* <div id="botones" className="si">
           {[
             { icon: faLocationDot, label: 'Ubicación' },
             { icon: faClock, label: 'Horarios' },
@@ -43,7 +43,7 @@ const HomePage = () => {
               {label}
             </Button>
           ))}
-        </div>
+        </div> */}
 
         {/* Galería de imágenes */}
         <div id="samples" className="si">
