@@ -23,6 +23,7 @@ const HomePage = () => {
       );
     };
   
+    
    
 
 
@@ -48,9 +49,11 @@ const HomePage = () => {
           {sampleImages.map((img, index) => (
             <img src={img} alt={`Muestra ${index + 1}`} className="fotos" key={index} />
           ))}
+          
         </div>
       </div>
     </main>
+  }
 };
-}
+
 export default HomePage
