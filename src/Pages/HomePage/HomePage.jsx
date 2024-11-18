@@ -3,13 +3,16 @@ import { faLocationDot, faClock, faImage, faMicrophone, faUsers } from '@fortawe
 import { Button } from '@mui/material';
 import { Link } from 'react-router-dom';
 
-
 import './HomePage.css';
 
+// Importa las imágenes de forma explícita
+import sampleImage from '../../assets/imagen.jpg';
+
 const HomePage = () => {
-  const imagenes = Array(6).fill(imagenes); 
+  const sampleImages = Array(6).fill(sampleImage); // Crea un array con las imágenes para simplificar
 
-
+  
+  return (
     <main>
       {/* Banner principal */}
       <div id="banner">
@@ -25,11 +28,17 @@ const HomePage = () => {
         </div>
       </div>
 
+      {/* Sección de botones de íconos */}
       <div>
-     
+        {/* Galería de imágenes */}
+        <div id="samples" className="si">
+          {sampleImages.map((img, index) => (
+            <img src={img} alt={`Muestra ${index + 1}`} className="fotos" key={index} />
+          ))}
+        </div>
       </div>
     </main>
-  
+  );
 };
 
-export default HomePage
+export default HomePage;
