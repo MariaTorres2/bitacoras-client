@@ -8,7 +8,7 @@ const NavBar = () => {
 return (
     <div id="Header">
         <Grid2 container spacing={8}/>
-            <img src="/assets/Logo.png" id="logo" alt="" />
+           
             <h1>Bótanica Viva</h1>
             <a href="Pweb_React\src\Pages\HomePage\LogedHomePage\LogedHomePage.jsx">¿Quienes Somos?</a>
             <a href="">Servicios</a>
