@@ -31,7 +31,7 @@
   .card-container {
     flex: 1 1 calc(50% - 20px); /* Cada tarjeta ocupa el 50% del ancho */
     box-sizing: border-box;
-    height: 20rem; /* Asegura que las tarjetas llenen el contenedor */
+    height: 25rem; /* Asegura que las tarjetas llenen el contenedor */
     display: flex;
   }
   
