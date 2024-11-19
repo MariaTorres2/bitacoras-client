@@ -10,3 +10,7 @@
     overflow: hidden;
     display: flex;
 }
+
+.carta{
+    height: auto;
+}

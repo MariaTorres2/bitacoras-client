@@ -10,7 +10,7 @@ const Cardpp = ({
   onDelete 
 }) => {
   return (
-    <Card 
+    <Card className='carta'
       sx={{ 
         maxWidth: 400, 
         border: '1px solid #ccc', 
