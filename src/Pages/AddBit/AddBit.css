@@ -69,11 +69,13 @@ input{
 }
 
 #i1{
-    width: 440px;
+    width: 240px;
+    height: 40px;
 }
 
 #i2{
-    width: 270px;
+    width: 240px;
+    height: 40px;
 }
 
 #i3{
@@ -81,7 +83,7 @@ input{
 }
 
 #i4{
-    width: 440px;
+    width: 340px;
 }
 
 #i5{

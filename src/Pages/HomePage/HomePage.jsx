@@ -11,7 +11,7 @@ const HomePage = () => {
     'https://dalerosas.com/modules/smartblog/images/6-single-default.jpg',
     'https://agriculturadelasamericas.com/wp-content/uploads/2022/01/alstroemeria-g3fd7516a3_640.jpg',
     'https://agriculturadelasamericas.com/wp-content/uploads/2022/01/1a0e6646-0567-416f-89f7-91accdb6ad7a-1024x768.jpg',
-    'https://i.pinimg.com/736x/bc/85/8a/bc858af7fbb9270b61397f449c1d58da.jpg',
+    'https://s3.amazonaws.com/rtvc-assets-canalinstitucional.tv/s3fs-public/styles/interna_noticias_after_1222x547_/public/2022-09/flores-colombianas-orquideas.jpg?itok=y0l3z_AO',
     'https://s3.amazonaws.com/rtvc-assets-canalinstitucional.tv/s3fs-public/inline-images/Claveles.jpg',
     'https://s3.amazonaws.com/rtvc-assets-canalinstitucional.tv/s3fs-public/inline-images/orqu%C3%ADdeas.jpg',
     'https://static8.depositphotos.com/1010238/810/i/450/depositphotos_8105962-stock-photo-tropical-flower-colombia.jpg',

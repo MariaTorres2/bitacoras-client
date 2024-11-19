@@ -134,18 +134,24 @@ button {
       box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.35);
     }
     #nigga_cont {
+      border: none;
       grid-column: 1/3;
       display: grid;
       grid-template-columns: 3fr 2fr;
     }
 
     #nigga1 {
+      border: none;
+      width: 500px;
       text-align: right;
       border-radius: 30px 0 0 30px;
       background-color: #157c36;
+      align-content: center;
     }
 
     #nigga2 {
+      border: none;
+      width: 150px;
       column-gap: 0;
       height: 100%;
       background-color: #157c36;
@@ -171,7 +177,11 @@ button {
       align-items: center;
       justify-content: center;
     }
-   
+   #logo1{
+    width: 80%;
+    background-color: white;
+    border-radius: 6rem;
+   }
     #entrada{
       width: 200px;
     }

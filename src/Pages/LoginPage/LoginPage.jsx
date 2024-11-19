@@ -62,12 +62,7 @@ const LoginPage = () => {
         <div id="main" className="animate__animated animate__fadeInDown">
           <div id="nigga_cont" className="animate__animated animate__fadeInLeft">
             <div id="nigga1">
-            <h2 id="wel" className="animate__animated animate__fadeIn">BIENVENIDO</h2>
-            <h2 id="wel" className="animate__animated animate__fadeIn">A EL </h2>
-              <h2 id="wel" className="animate__animated animate__fadeIn">MEJOR</h2>
-              <h2 id="wel" className="animate__animated animate__fadeIn">ESPACIO</h2>
-              <h2 id="wel" className="animate__animated animate__fadeIn">BOTANICO</h2>
-              
+            <img src="https://i.ibb.co/RPCnpvL/logopage.png" id="logo1" alt="" />
             </div>
             <div id="nigga2"></div>
           </div>
