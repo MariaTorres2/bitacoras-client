@@ -26,13 +26,30 @@
     flex-wrap: wrap;
     gap: 10px; /* Espacio entre las tarjetas */
     justify-content: center;
-}
-
-.card-container {
-    flex: 1 1 calc(50% - 20px); /* Ocupa el 50% del ancho con espacio */
+  }
+  
+  .card-container {
+    flex: 1 1 calc(50% - 20px); /* Cada tarjeta ocupa el 50% del ancho */
     box-sizing: border-box;
-    height: 700px;
-    max-width: calc(50% - 20px); /* Corrige el error */
-    display: flex; /* Asegura que el contenido interno tenga alineación */
+    height: 100%; /* Asegura que las tarjetas llenen el contenedor */
+    display: flex;
+  }
+  
+  .carta {
+    height: 100%; /* Ocupa todo el espacio del contenedor */
+    display: flex;
     flex-direction: column; /* Organiza el contenido en columna */
-}
+  }
+  
+  .Card_Content {
+    flex-grow: 1; /* Permite que el contenido crezca y ocupe espacio disponible */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Distribuye los elementos verticalmente */
+  }
+  
+  #deleteBit {
+    margin-top: 10px;
+    align-self: center;
+  }
+  

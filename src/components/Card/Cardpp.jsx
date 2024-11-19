@@ -10,45 +10,59 @@ const Cardpp = ({
   onDelete 
 }) => {
   return (
-    <Card className='carta'
-      sx={{ 
-        maxWidth: 400, 
-        border: '1px solid #ccc', 
-        borderRadius: '8px', 
-        margin: '10px', 
-        display: 'flex', 
-        flexDirection: 'column', 
-        justifyContent: 'space-between' 
-      }}
+    <Card
+  className="carta"
+  sx={{
+    width: '100%',
+    height: '100%', // Ocupar toda la altura del contenedor
+    border: '1px solid #ccc',
+    borderRadius: '8px',
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'space-between',
+  }}
+>
+  <CardMedia
+    component="img"
+    height="140"
+    image={imageUrl}
+    alt={title}
+  />
+  <CardContent
+    className="Card_Content"
+    sx={{
+      flexGrow: 1, // Ocupar el espacio disponible dinámicamente
+      display: 'flex',
+      flexDirection: 'column',
+      justifyContent: 'space-between',
+    }}
+  >
+    <Typography variant="h6" component="div">
+      {title}
+    </Typography>
+    <Typography
+      variant="body2"
+      color="text.secondary"
+      sx={{ marginBottom: '10px' }}
     >
-      <CardMedia
-        component="img"
-        height="140"
-        image={imageUrl} 
-        alt={title}
-      />
-      <CardContent className='Card_Content'>
-        <Typography variant="h6" component="div">
-          {title} 
-        </Typography>
-        <Typography variant="body2" color="text.secondary" sx={{ marginBottom: '10px' }}>
-          {description} 
-        </Typography>
-        <div style={{ display: 'flex', justifyContent: 'center' }}>
-          <button id="deleteBit"
-            onClick={onDelete}
-            style={{
-              backgroundColor: 'transparent',
-              border: 'none',
-              cursor: 'pointer',
-            }}
-            aria-label="Eliminar bitácora"
-          >
-            <FontAwesomeIcon icon={faTrash} size="s" color="red" />
-          </button>
-        </div>
-      </CardContent>
-    </Card>
+      {description}
+    </Typography>
+    <div style={{ display: 'flex', justifyContent: 'center' }}>
+      <button
+        id="deleteBit"
+        onClick={onDelete}
+        style={{
+          backgroundColor: 'transparent',
+          border: 'none',
+          cursor: 'pointer',
+        }}
+        aria-label="Eliminar bitácora"
+      >
+        <FontAwesomeIcon icon={faTrash} size="s" color="red" />
+      </button>
+    </div>
+  </CardContent>
+</Card>
   );
 };
 
