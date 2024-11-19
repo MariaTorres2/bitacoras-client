@@ -1,5 +1,3 @@
-
-import { faLocationDot, faClock, faImage, faMicrophone, faUsers } from '@fortawesome/free-solid-svg-icons';
 import { Button } from '@mui/material';
 import { Link } from 'react-router-dom';
 

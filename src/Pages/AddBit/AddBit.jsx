@@ -4,6 +4,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import "../AddBit/AddBit.css";
 import FileUploadButton from '../../components/FileUploadButton/FileUploadButton';
 import { create } from '../../services/bitacoraService';
+import logo from '../../assets/Logo.png';
 
 const AddBit = () => {
   const [formData, setFormData] = useState({
@@ -44,7 +45,7 @@ const AddBit = () => {
   return (
     <div id='ppal'>
       <div id='jead'>
-        <img src="src/assets/Logo.png" alt="" id='logo' />
+        <img src={logo} alt="" id='logo' />
         <h2>Botanica Viva</h2>
         <Link to='/LogedHomePage'>
           <Button>Regresar</Button>
