@@ -1,26 +1,27 @@
-import { useEffect, useState } from 'react';
-import LogNavBar from '../../../components/LogNavBar/LogNavBar';
-import Cardpp from '../../../components/Card/Cardpp';
+import { useEffect, useState } from "react";
+import LogNavBar from "../../../components/LogNavBar/LogNavBar";
+import Cardpp from "../../../components/Card/Cardpp";
 import "../LogedHomePage/LogedHomePage.css";
-import { getAll } from '../../../services/bitacoraService';
+import { getAll, deleteOne } from "../../../services/bitacoraService";
 
 const LogedHomePage = () => {
   const [cards, setCards] = useState([]);
   const [visibleCards, setVisibleCards] = useState(9);
-  const [loading, setLoading] = useState(true); 
+  const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
   useEffect(() => {
     const fetchCards = async () => {
       try {
-        setLoading(true); 
+        setLoading(true);
         const data = await getAll();
-        setCards(data); 
+        console.log("Datos obtenidos:", data);
+        setCards(data);
       } catch (error) {
-        console.error('Error al cargar las bitácoras:', error);
-        setError(error.message || 'Error al cargar las bitácoras');
+        console.error("Error al cargar las bitácoras:", error);
+        setError(error.message || "Error al cargar las bitácoras");
       } finally {
-        setLoading(false); 
+        setLoading(false);
       }
     };
 
@@ -29,6 +30,17 @@ const LogedHomePage = () => {
 
   const loadMoreCards = () => {
     setVisibleCards((prevVisible) => prevVisible + 9);
+  };
+
+  const handleDelete = async (id_bitacora) => {
+    try {
+      await deleteOne(id_bitacora);
+      setCards((prevCards) =>
+        prevCards.filter((card) => card.id_bitacora !== id_bitacora)
+      );
+    } catch (error) {
+      console.error("Error al eliminar la bitácora:", error);
+    }
   };
 
   if (loading) {
@@ -47,11 +59,12 @@ const LogedHomePage = () => {
       <div id="logom">
         <div className="card-grid">
           {cards.slice(0, visibleCards).map((card) => (
-            <div key={card._id} className="card-container">
+            <div key={card.id_bitacora} className="card-container">
               <Cardpp
                 title={card.titulo}
                 imageUrl={card.imagen_sitio}
                 description={card.observaciones}
+                onDelete={() => handleDelete(card.id_bitacora)}
               />
             </div>
           ))}
