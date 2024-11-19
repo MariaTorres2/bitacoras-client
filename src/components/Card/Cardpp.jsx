@@ -43,6 +43,7 @@ const Cardpp = ({
             {description}
           </Typography>
         </div>
+        
         <div style={{ display: "flex", justifyContent: "center" }}>
           <button
             id="deleteBit"

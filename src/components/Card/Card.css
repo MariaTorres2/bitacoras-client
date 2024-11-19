@@ -1,9 +1,9 @@
 #deleteBit {
-    margin-top: 10px; /* Agrega espacio entre la descripción y el botón */
+    margin-top: 10px; 
 }
 
 .card-container #deleteBit{
-    align-self: center; /* Centra el botón dentro del contenedor */
+    align-self: center;
 }
 
 .Card_Content{
@@ -13,4 +13,10 @@
 
 .carta{
     height: 100%;
+}
+
+#textos{
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
 }
