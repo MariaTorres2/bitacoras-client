@@ -27,7 +27,7 @@ const Cardpp = ({
         image={imageUrl} 
         alt={title}
       />
-      <CardContent>
+      <CardContent className='Card_Content'>
         <Typography variant="h6" component="div">
           {title} 
         </Typography>

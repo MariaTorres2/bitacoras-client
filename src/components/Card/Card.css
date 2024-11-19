@@ -5,3 +5,7 @@
 .card-container #deleteBit{
     align-self: center; /* Centra el botón dentro del contenedor */
 }
+
+.Card_Content{
+    overflow: hidden;
+}
