@@ -46,7 +46,7 @@ const AddBit = () => {
     <div id='ppal'>
       <div id='jead'>
         <img src={logo} alt="" id='logo' />
-        <h2>Botanica Viva</h2>
+        <h2>Botánica Viva</h2>
         <Link to='/LogedHomePage'>
           <Button>Regresar</Button>
         </Link>
@@ -69,7 +69,7 @@ const AddBit = () => {
               <h3>
                 <img src={logohojita} className='hojita' />Hora
               </h3>
-              <input type="time" id="i3" name="hora" value={formData.hora} onChange={handleInputChange} />
+              <input type="time" id="hora" name="hora" value={formData.hora} onChange={handleInputChange} />
             </div>
           </div>
           <h3>
@@ -83,7 +83,7 @@ const AddBit = () => {
         </div>
 
         <div id='half2'>
-          <h3>
+          <h3 id='fotografia'>
             <img src={logohojita}className='hojita' />Fotografías del sitio de muestreo
           </h3>
           <h3>
