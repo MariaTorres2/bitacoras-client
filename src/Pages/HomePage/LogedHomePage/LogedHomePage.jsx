@@ -57,7 +57,7 @@ const LogedHomePage = () => {
         <LogNavBar id="cd" />
       </div>
       <div id="logom">
-        <div className="card-grid">
+        <div className="card-grid1">
           {cards.slice(0, visibleCards).map((card) => (
             <div key={card.id_bitacora} className="card-container">
               <Cardpp

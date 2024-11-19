@@ -21,7 +21,7 @@
 }
 
 .card-grid {
-    flex: 1;
+    width: 80%;
     display: flex;
     flex-wrap: wrap;
     gap: 20px; /* Espacio entre las tarjetas */

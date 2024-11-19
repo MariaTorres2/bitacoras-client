@@ -20,8 +20,8 @@
     overflow-y: auto; /* Permite desplazamiento vertical en caso de contenido largo */
 }
 
-.card-grid {
-    flex: 1;
+.card-grid1 {
+    width: 80%;
     display: flex;
     flex-wrap: wrap;
     gap: 10px; /* Espacio entre las tarjetas */
