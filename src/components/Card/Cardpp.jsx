@@ -39,7 +39,7 @@ const Cardpp = ({
           <Typography
             variant="body2"
             color="text.secondary"
-            sx={{ marginBottom: "10px" }}
+            
           >
             {description}
           </Typography>
