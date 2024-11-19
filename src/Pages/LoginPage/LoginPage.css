@@ -127,7 +127,7 @@ button {
       position: absolute;
       
       width: 70vw;
-      height: 85vh;
+      height: 90vh;
       display: grid;
       grid-template-columns: 3fr 2fr 2fr 3fr;
       border-radius: 30px;
@@ -142,7 +142,7 @@ button {
 
     #nigga1 {
       border: none;
-      width: 500px;
+      width: 430px;
       text-align: right;
       border-radius: 30px 0 0 30px;
       background-color: #157c36;
@@ -172,11 +172,13 @@ button {
       color: black;
       font-style: bold;
       grid-column: 3/5;
+      height: 100%;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
     }
+
    #logo1{
     width: 80%;
     background-color: white;
