@@ -1,0 +1,7 @@
+#deleteBit {
+    margin-top: 10px; /* Agrega espacio entre la descripción y el botón */
+}
+
+.card-container button {
+    align-self: center; /* Centra el botón dentro del contenedor */
+}

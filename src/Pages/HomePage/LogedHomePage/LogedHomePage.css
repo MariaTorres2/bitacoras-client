@@ -29,8 +29,9 @@
 }
 
 .card-container {
-    flex: 1 1 calc(50% - 20px); /* Cada tarjeta ocupa un tercio del ancho */
+    flex: 1 1 calc(50% - 20px); /* Ocupa el 50% del ancho con espacio */
     box-sizing: border-box;
-    height: 250px;
-    max-width: 1 1 calc(50% - 20px) 
+    max-width: calc(50% - 20px); /* Corrige el error */
+    display: flex; /* Asegura que el contenido interno tenga alineación */
+    flex-direction: column; /* Organiza el contenido en columna */
 }
