@@ -43,12 +43,13 @@ button {
   
   #ing {
     border: none;
-    margin-top: 40px;
+    margin-top: 50px;
     border-radius: 30px;
+    border: 2px solid black;
     height: 60px;
     width: 220px;
-    background-color: #626f47;
-    color: white;
+    background-color: #88a64c;
+    color: rgb(0, 0, 0);
     font-size: 24px;
     outline: 1px solid;
     outline-color: rgba(255, 255, 255, 0);
@@ -56,10 +57,11 @@ button {
     text-shadow: none;
     -webkit-transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
     transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
-    outline-color: rgba(255, 255, 255, 0.5);
+    outline-color: rgba(155, 114, 114, 0.5);
     outline-offset: 0px;
   }
   #ing:hover {
+    background-color: rgb(98, 204, 202);
     border: 1px solid;
     box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.2);
     outline-offset: 15px;
@@ -68,19 +70,36 @@ button {
   }
   
   #regis {
-    border: none;
-    margin-top: 40px;
+    margin-top: 30px;
     border-radius: 30px;
+    border: 2px solid black;
     height: 60px;
     width: 220px;
-    background-color: white;
-    color: black;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
     font-size: 24px;
-    box-shadow: inset 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+    outline: 1px solid;
+    outline-color: rgba(255, 255, 255, 0);
+    outline-offset: 0px;
+    text-shadow: none;
+    -webkit-transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+    transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+    outline-color: rgba(155, 114, 114, 0.5);
+    outline-offset: 0px;
+  }
+
+  #regis:hover{
+    background-color: rgb(98, 204, 202);
+    border: 1px solid;
+    box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.2);
+    outline-offset: 15px;
+    outline-color: rgba(255, 255, 255, 0);
+    text-shadow: 1px 1px 2px rgba(236, 240, 242, 0.8117647059);
   }
   
   #lo {
-    font-size: 40pt;
+    margin-bottom: 30px;
+    font-size: 60pt;
     border-bottom: 5px solid black;
   }
 
@@ -121,21 +140,24 @@ button {
     }
 
     #nigga1 {
+      text-align: right;
       border-radius: 30px 0 0 30px;
-      background-color: #626f47;
+      background-color: #157c36;
     }
 
     #nigga2 {
       column-gap: 0;
       height: 100%;
-      background-color: #626f47;
+      background-color: #157c36;
       clip-path: polygon(0% 0%, 100% 0%, 50% 100%, 0% 100%);
     }
 
     #wel {
       position: relative;
       color: white;
-      font-size: 36pt;
+      margin-top: 40px;
+      text-align: center;
+      font-size: 38pt;
       width: 200px;
       left: 50px;
 
@@ -148,4 +170,12 @@ button {
       flex-direction: column;
       align-items: center;
       justify-content: center;
+    }
+   
+    #entrada{
+      width: 200px;
+    }
+
+    .credencial{
+      margin-top: 30px;
     }

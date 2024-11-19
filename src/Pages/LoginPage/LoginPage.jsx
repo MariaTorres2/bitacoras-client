@@ -5,6 +5,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import { useState } from 'react';
 import Swal from 'sweetalert2';
 import { login } from '../../services/auhtService';
+import logo from '../../assets/Logo.png';
 
 const LoginPage = () => {
   const [credentials, setCredentials] = useState({ email: '', password: '' });
@@ -61,23 +62,29 @@ const LoginPage = () => {
         <div id="main" className="animate__animated animate__fadeInDown">
           <div id="nigga_cont" className="animate__animated animate__fadeInLeft">
             <div id="nigga1">
-              <h2 id="wel" className="animate__animated animate__fadeIn">Login</h2>
+            <h2 id="wel" className="animate__animated animate__fadeIn">BIENVENIDO</h2>
+            <h2 id="wel" className="animate__animated animate__fadeIn">A EL </h2>
+              <h2 id="wel" className="animate__animated animate__fadeIn">MEJOR</h2>
+              <h2 id="wel" className="animate__animated animate__fadeIn">ESPACIO</h2>
+              <h2 id="wel" className="animate__animated animate__fadeIn">BOTANICO</h2>
               
             </div>
             <div id="nigga2"></div>
           </div>
           <div id="contenmelo" className="animate__animated animate__fadeIn">
-            <h2 id="lo">Log In</h2>
+            <h2 id="lo">Login</h2>
             <form id="log" onSubmit={handleLogin}>
-              <h3>Usuario</h3>
+              <h3 class="credencial">Usuario</h3>
               <input
+              id="entrada"
                 type="text"
                 name="email"
                 value={credentials.email}
                 onChange={handleInputChange}
               />
-              <h3>Contraseña</h3>
+              <h3 class="credencial">Contraseña</h3>
               <input
+               id="entrada"
                 type="password"
                 name="password"
                 value={credentials.password}

@@ -24,12 +24,12 @@
     flex: 1;
     display: flex;
     flex-wrap: wrap;
-    gap: 20px; /* Espacio entre las tarjetas */
+    gap: 10px; /* Espacio entre las tarjetas */
     justify-content: center;
 }
 
 .card-container {
-    flex: 1 1 calc(33.333% - 20px); /* Cada tarjeta ocupa un tercio del ancho */
+    flex: 1 1 calc(50% - 20px); /* Cada tarjeta ocupa un tercio del ancho */
     box-sizing: border-box;
-    max-width: calc(33.333% - 20px);
+    max-width: 1 1 calc(50% - 20px) 
 }

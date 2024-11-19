@@ -3,11 +3,20 @@ import { Link } from 'react-router-dom';
 
 import './HomePage.css';
 
-// Importa las imágenes de forma explícita
-import sampleImage from '../../assets/Banner.png';
+
 
 const HomePage = () => {
-  const sampleImages = Array(6).fill(sampleImage); // Crea un array con las imágenes para simplificar
+
+  const imagenes = [
+    'https://dalerosas.com/modules/smartblog/images/6-single-default.jpg',
+    'https://agriculturadelasamericas.com/wp-content/uploads/2022/01/alstroemeria-g3fd7516a3_640.jpg',
+    'https://agriculturadelasamericas.com/wp-content/uploads/2022/01/1a0e6646-0567-416f-89f7-91accdb6ad7a-1024x768.jpg',
+    'https://i.pinimg.com/736x/bc/85/8a/bc858af7fbb9270b61397f449c1d58da.jpg',
+    'https://s3.amazonaws.com/rtvc-assets-canalinstitucional.tv/s3fs-public/inline-images/Claveles.jpg',
+    'https://s3.amazonaws.com/rtvc-assets-canalinstitucional.tv/s3fs-public/inline-images/orqu%C3%ADdeas.jpg',
+    'https://static8.depositphotos.com/1010238/810/i/450/depositphotos_8105962-stock-photo-tropical-flower-colombia.jpg',
+    'https://www.blogdemedioambiente.com/wp-content/uploads/2024/01/tipos-de-flores-explorando-la-diversidad-floral-en-la-naturaleza.jpg',
+];
 
   
   return (
@@ -30,7 +39,7 @@ const HomePage = () => {
       <div>
         {/* Galería de imágenes */}
         <div id="samples" className="si">
-          {sampleImages.map((img, index) => (
+          {imagenes.map((img, index) => (
             <img src={img} alt={`Muestra ${index + 1}`} className="fotos" key={index} />
           ))}
         </div>

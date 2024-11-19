@@ -5,7 +5,7 @@ import { faTrash } from '@fortawesome/free-solid-svg-icons';
 
 const Cardpp = ({ title = 'Título no disponible', imageUrl = 'https://via.placeholder.com/300', description = 'Descripción no disponible', onDelete }) => {
   return (
-    <Card sx={{ maxWidth: 300, border: '1px solid #ccc', borderRadius: '8px', margin: '10px' }}>
+    <Card sx={{ maxWidth: 400, border: '1px solid #ccc', borderRadius: '8px', margin: '10px' }}>
       <CardMedia
         component="img"
         height="140"
