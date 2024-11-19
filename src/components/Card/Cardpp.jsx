@@ -38,6 +38,7 @@ const Cardpp = ({
           </Typography>
           <Typography className="decript"
             variant="body2"
+            component="div"
             color="text.secondary"
           >
             {description}
