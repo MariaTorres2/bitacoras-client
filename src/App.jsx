@@ -28,6 +28,7 @@ const MainApp = () => {
         <Route path="/" element={<HomePage />} />
         <Route path="/LoginPage" element={<LoginPage />} />
         <Route path="/LogedHomePage" element={<LogedHomePage />} />
+      
 
         {/* Funcionalidades del sistema */}
         <Route path="/Filtred" element={<Filtred />} />
@@ -42,6 +43,7 @@ const MainApp = () => {
         {/* Rutas de bitácoras */}
         <Route path="/SelectedBita" element={<SelectBita />} />
         <Route path="/BitSamples" element={<BitSample />} />
+        <Route path="/detallebitacora/:id" element={<LogedHomePage />} />
 
         {/* Rutas de registro */}
         <Route path="/SpeciesRegister" element={<SpeciesRegister />} />
