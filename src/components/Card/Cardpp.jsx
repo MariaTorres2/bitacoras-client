@@ -44,7 +44,7 @@ const Cardpp = ({
             }}
             aria-label="Eliminar bitácora"
           >
-            <FontAwesomeIcon icon={faTrash} size="lg" color="red" />
+            <FontAwesomeIcon icon={faTrash} size="s" color="red" />
           </button>
         </div>
       </CardContent>

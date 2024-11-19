@@ -8,4 +8,5 @@
 
 .Card_Content{
     overflow: hidden;
+    display: flex;
 }
