@@ -36,14 +36,14 @@ const Cardpp = ({
           <Typography variant="h6" component="div">
             {title}
           </Typography>
-          <Typography
+          <Typography className="decript"
             variant="body2"
             color="text.secondary"
           >
             {description}
           </Typography>
         </div>
-        
+
         <div style={{ display: "flex", justifyContent: "center" }}>
           <button
             id="deleteBit"
